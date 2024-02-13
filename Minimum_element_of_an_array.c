@@ -1,20 +1,20 @@
 #include<stdio.h>
 int main()
 {
-    int i,n;
+    int i,n,l;
     scanf("%d",&n);
     int arr[n];
     for(i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);
     }
-    int m=arr[0];
+    l=arr[0];
     for(i=0;i<n;i++)
     {
-        if(arr[i]<m)
+        if(arr[i]<l)
         {
-            m=arr[i];
+            l=arr[i];
         }
     }
-    printf("%d",m);
+    printf("%d",l);
 }
